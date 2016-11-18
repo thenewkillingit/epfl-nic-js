@@ -19,6 +19,7 @@ $RECYCLE.BIN/
 
 # Visual Studio Code files
 *.vscode
+*.ropeproject
 
 # =========================
 # Operating System Files
