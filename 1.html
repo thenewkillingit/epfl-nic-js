@@ -29,6 +29,29 @@
                 create_next_generation();
                 console.log("generation " + (i + 1) + ":", round_number(a1a1, 2), round_number(a1a2, 2), round_number(a2a2, 2));
             };
+
+            // If we wanted to have an increment of 0.1 instead of 0.2, we would have to modify 5 lines, 
+            // which is not what good programming is about ;)
+            // Modify the code so that it uses a function show_values to print the values to the console,
+            // and a function next to increment p by 0.2.
+            // Obviously, the program will be shorter, less prone to bugs and easier to modify!
+
+            var p = 0;
+            var q = 1 - p;
+
+            function next() {
+                p = p + 0.2;
+                q = 1 - p;
+            }
+
+            function show_values() {
+                console.log('p =', p, 'q =', q);
+            }
+            for (var index = 0; index < 6; index++) {
+                show_values();
+                next();
+            }
+            
         </script>
     </head>
 

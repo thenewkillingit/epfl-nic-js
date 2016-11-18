@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function make_child(){
+                var p = Math.random();
+                    if (p > 0.515) {
+                        return "girl";
+                    } else {
+                return "boy";
+                }
+            }
+
+            function boys_in_children(value){
+                var boys = 0
+                    for (var index = 0; index < value; index++) {
+                        if (make_child() == "boy"){
+                            var boys = boys + 1
+                        }
+                    }
+                return boys
+            }
+
+            // ok
+
+            // Generating random numbers
+
+            var repeats = 6
+            var sum = 0;
+            for (var i = 0; i < repeats; i++) {
+                sum = sum + Math.random();
+                }
+            var average = sum / repeats;
+            console.log("The average is", average)
+
+        </script>
+
+    </head>
+
+    <body>
+
+    </body>
+</html>
